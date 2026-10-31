@@ -1,0 +1,363 @@
+{
+  "model": "gpt-6-luna",
+  "base_url": "https://spacetimeai.cc/v1",
+  "demonstrations_file": "/home/czx/LWM/world_model_research/experiments/alfworld/outputs/api_wm_assisted/alfworld_transition_demos_compact.json",
+  "metrics": {
+    "completed_pairs": 1,
+    "requested_tasks": 5,
+    "task_id": null,
+    "baseline_successes": 1,
+    "wm_assisted_successes": 0,
+    "baseline_attempted": 1,
+    "wm_assisted_attempted": 1,
+    "baseline_errors": 0,
+    "wm_assisted_errors": 1,
+    "baseline_success_rate": 1.0,
+    "wm_assisted_success_rate": 0.0,
+    "paired_valid_runs": 0,
+    "paired_both_successes": 0,
+    "baseline_mean_steps": 11.0,
+    "wm_assisted_mean_steps": 0,
+    "wm_fewer_steps_count": 0,
+    "wm_more_steps_count": 0,
+    "wm_step_savings_total": 0,
+    "wm_step_savings_mean": 0,
+    "paired_win_count": 0,
+    "max_steps": 30,
+    "candidate_count": 3,
+    "trace_file": "/home/czx/LWM/world_model_research/experiments/alfworld/outputs/api_wm_assisted/traces/alfworld_rerun5_nohidden_compact.jsonl.gz",
+    "usage": {
+      "baseline": {
+        "calls": 11,
+        "prompt_tokens": 7171,
+        "completion_tokens": 987
+      },
+      "wm_assisted": {
+        "calls": 0,
+        "prompt_tokens": 0,
+        "completion_tokens": 0
+      }
+    }
+  },
+  "run_error": null,
+  "results": [
+    {
+      "item_id": 2420,
+      "task_type": "pick_cool_then_place_in_recep-Mug-None-CoffeeMachine-23",
+      "baseline": {
+        "success": 1,
+        "steps": [
+          {
+            "step": 1,
+            "state": "You are in the middle of a room. Looking quickly around you, you see a cabinet 10, a cabinet 9, a cabinet 8, a cabinet 7, a cabinet 6, a cabinet 5, a cabinet 4, a cabinet 3, a cabinet 2, a cabinet 1, a coffeemachine 1, a countertop 1, a diningtable 1, a drawer 2, a drawer 1, a fridge 1, a garbagecan 1, a microwave 1, a sinkbasin 1, a stoveburner 4, a stoveburner 3, a stoveburner 2, a stoveburner 1, and a toaster 1.\nYour task is to: cool some mug and put it in coffeemachine.\nAVAILABLE ACTIONS: go to cabinet 1,go to cabinet 10,go to cabinet 2,go to cabinet 3,go to cabinet 4,go to cabinet 5,go to cabinet 6,go to cabinet 7,go to cabinet 8,go to cabinet 9,go to coffeemachine 1,go to countertop 1,go to diningtable 1,go to drawer 1,go to drawer 2,go to fridge 1,go to garbagecan 1,go to microwave 1,go to sinkbasin 1,go to stoveburner 1,go to stoveburner 2,go to stoveburner 3,go to stoveburner 4,go to toaster 1,help,inventory,look",
+            "progress": "No actions completed; mug not yet found. Remaining: obtain a mug, cool it, and put it in the coffeemachine.",
+            "loop_warning": "No repeated-state warning.",
+            "inventory_before_action": [],
+            "candidates": [
+              "go to cabinet 1"
+            ],
+            "proposal_output": null,
+            "proposal_response": null,
+            "wm_inputs": [],
+            "predictions": [],
+            "wm_responses": [],
+            "decision": "Progress: No actions completed; mug not yet found. Remaining: obtain a mug, cool it, and put it in the coffeemachine.\nRationale: Check an available cabinet for a mug.\nAction: go to cabinet 1",
+            "decision_response": {
+              "content": "Progress: No actions completed; mug not yet found. Remaining: obtain a mug, cool it, and put it in the coffeemachine.\nRationale: Check an available cabinet for a mug.\nAction: go to cabinet 1",
+              "role": "assistant"
+            },
+            "decision_rationale": "Check an available cabinet for a mug.",
+            "selection_fallback": false,
+            "action": "go to cabinet 1",
+            "real_observation": "You arrive at cabinet 1. The cabinet 1 is closed.",
+            "done": false,
+            "reward": 0.0
+          },
+          {
+            "step": 2,
+            "state": "You arrive at cabinet 1. The cabinet 1 is closed.\nAVAILABLE ACTIONS: examine cabinet 1,go to cabinet 10,go to cabinet 2,go to cabinet 3,go to cabinet 4,go to cabinet 5,go to cabinet 6,go to cabinet 7,go to cabinet 8,go to cabinet 9,go to coffeemachine 1,go to countertop 1,go to diningtable 1,go to drawer 1,go to drawer 2,go to fridge 1,go to garbagecan 1,go to microwave 1,go to sinkbasin 1,go to stoveburner 1,go to stoveburner 2,go to stoveburner 3,go to stoveburner 4,go to toaster 1,help,inventory,look,open cabinet 1",
+            "progress": "No actions completed; mug not yet found. Remaining: obtain a mug, cool it, and put it in the coffeemachine.",
+            "loop_warning": "No repeated-state warning.",
+            "inventory_before_action": [],
+            "candidates": [
+              "open cabinet 1"
+            ],
+            "proposal_output": null,
+            "proposal_response": null,
+            "wm_inputs": [],
+            "predictions": [],
+            "wm_responses": [],
+            "decision": "Progress: No actions completed; mug not yet found. Remaining: obtain a mug, cool it, and put it in the coffeemachine.\nRationale: Cabinet 1 is closed and may be checked for the needed mug.\nAction: open cabinet 1",
+            "decision_response": {
+              "content": "Progress: No actions completed; mug not yet found. Remaining: obtain a mug, cool it, and put it in the coffeemachine.\nRationale: Cabinet 1 is closed and may be checked for the needed mug.\nAction: open cabinet 1",
+              "role": "assistant"
+            },
+            "decision_rationale": "Cabinet 1 is closed and may be checked for the needed mug.",
+            "selection_fallback": false,
+            "action": "open cabinet 1",
+            "real_observation": "You open the cabinet 1. The cabinet 1 is open. In it, you see nothing.",
+            "done": false,
+            "reward": 0.0
+          },
+          {
+            "step": 3,
+            "state": "You open the cabinet 1. The cabinet 1 is open. In it, you see nothing.\nAVAILABLE ACTIONS: close cabinet 1,examine cabinet 1,go to cabinet 10,go to cabinet 2,go to cabinet 3,go to cabinet 4,go to cabinet 5,go to cabinet 6,go to cabinet 7,go to cabinet 8,go to cabinet 9,go to coffeemachine 1,go to countertop 1,go to diningtable 1,go to drawer 1,go to drawer 2,go to fridge 1,go to garbagecan 1,go to microwave 1,go to sinkbasin 1,go to stoveburner 1,go to stoveburner 2,go to stoveburner 3,go to stoveburner 4,go to toaster 1,help,inventory,look",
+            "progress": "Cabinet 1 checked; it is empty. Mug not yet found. Remaining: obtain a mug, cool it, and put it in the coffeemachine.",
+            "loop_warning": "No repeated-state warning.",
+            "inventory_before_action": [],
+            "candidates": [
+              "go to cabinet 2"
+            ],
+            "proposal_output": null,
+            "proposal_response": null,
+            "wm_inputs": [],
+            "predictions": [],
+            "wm_responses": [],
+            "decision": "Progress: Cabinet 1 checked; it is empty. Mug not yet found. Remaining: obtain a mug, cool it, and put it in the coffeemachine.\nRationale: Check another cabinet for a mug.\nAction: go to cabinet 2",
+            "decision_response": {
+              "content": "Progress: Cabinet 1 checked; it is empty. Mug not yet found. Remaining: obtain a mug, cool it, and put it in the coffeemachine.\nRationale: Check another cabinet for a mug.\nAction: go to cabinet 2",
+              "role": "assistant"
+            },
+            "decision_rationale": "Check another cabinet for a mug.",
+            "selection_fallback": false,
+            "action": "go to cabinet 2",
+            "real_observation": "You arrive at cabinet 2. The cabinet 2 is closed.",
+            "done": false,
+            "reward": 0.0
+          },
+          {
+            "step": 4,
+            "state": "You arrive at cabinet 2. The cabinet 2 is closed.\nAVAILABLE ACTIONS: examine cabinet 2,go to cabinet 1,go to cabinet 10,go to cabinet 3,go to cabinet 4,go to cabinet 5,go to cabinet 6,go to cabinet 7,go to cabinet 8,go to cabinet 9,go to coffeemachine 1,go to countertop 1,go to diningtable 1,go to drawer 1,go to drawer 2,go to fridge 1,go to garbagecan 1,go to microwave 1,go to sinkbasin 1,go to stoveburner 1,go to stoveburner 2,go to stoveburner 3,go to stoveburner 4,go to toaster 1,help,inventory,look,open cabinet 2",
+            "progress": "Cabinet 1 checked; it is empty. Mug not yet found. Remaining: find a mug, cool it, and put it in the coffeemachine.",
+            "loop_warning": "No repeated-state warning.",
+            "inventory_before_action": [],
+            "candidates": [
+              "open cabinet 2"
+            ],
+            "proposal_output": null,
+            "proposal_response": null,
+            "wm_inputs": [],
+            "predictions": [],
+            "wm_responses": [],
+            "decision": "Progress: Cabinet 1 checked; it is empty. Mug not yet found. Remaining: find a mug, cool it, and put it in the coffeemachine.\nRationale: Cabinet 2 is closed and has not been checked yet.\nAction: open cabinet 2",
+            "decision_response": {
+              "content": "Progress: Cabinet 1 checked; it is empty. Mug not yet found. Remaining: find a mug, cool it, and put it in the coffeemachine.\nRationale: Cabinet 2 is closed and has not been checked yet.\nAction: open cabinet 2",
+              "role": "assistant"
+            },
+            "decision_rationale": "Cabinet 2 is closed and has not been checked yet.",
+            "selection_fallback": false,
+            "action": "open cabinet 2",
+            "real_observation": "You open the cabinet 2. The cabinet 2 is open. In it, you see a dishsponge 1.",
+            "done": false,
+            "reward": 0.0
+          },
+          {
+            "step": 5,
+            "state": "You open the cabinet 2. The cabinet 2 is open. In it, you see a dishsponge 1.\nAVAILABLE ACTIONS: close cabinet 2,examine cabinet 2,go to cabinet 1,go to cabinet 10,go to cabinet 3,go to cabinet 4,go to cabinet 5,go to cabinet 6,go to cabinet 7,go to cabinet 8,go to cabinet 9,go to coffeemachine 1,go to countertop 1,go to diningtable 1,go to drawer 1,go to drawer 2,go to fridge 1,go to garbagecan 1,go to microwave 1,go to sinkbasin 1,go to stoveburner 1,go to stoveburner 2,go to stoveburner 3,go to stoveburner 4,go to toaster 1,help,inventory,look,take dishsponge 1 from cabinet 2",
+            "progress": "Cabinet 1 checked and empty; cabinet 2 checked and contains only a dishsponge. Mug not yet found. Remaining: find a mug, cool it, and put it in the coffeemachine.",
+            "loop_warning": "No repeated-state warning.",
+            "inventory_before_action": [],
+            "candidates": [
+              "go to cabinet 3"
+            ],
+            "proposal_output": null,
+            "proposal_response": null,
+            "wm_inputs": [],
+            "predictions": [],
+            "wm_responses": [],
+            "decision": "Progress: Cabinet 1 checked and empty; cabinet 2 checked and contains only a dishsponge. Mug not yet found. Remaining: find a mug, cool it, and put it in the coffeemachine.\nRationale: Check the next cabinet for a mug.\nAction: go to cabinet 3",
+            "decision_response": {
+              "content": "Progress: Cabinet 1 checked and empty; cabinet 2 checked and contains only a dishsponge. Mug not yet found. Remaining: find a mug, cool it, and put it in the coffeemachine.\nRationale: Check the next cabinet for a mug.\nAction: go to cabinet 3",
+              "role": "assistant"
+            },
+            "decision_rationale": "Check the next cabinet for a mug.",
+            "selection_fallback": false,
+            "action": "go to cabinet 3",
+            "real_observation": "You arrive at cabinet 3. The cabinet 3 is closed.",
+            "done": false,
+            "reward": 0.0
+          },
+          {
+            "step": 6,
+            "state": "You arrive at cabinet 3. The cabinet 3 is closed.\nAVAILABLE ACTIONS: examine cabinet 3,go to cabinet 1,go to cabinet 10,go to cabinet 2,go to cabinet 4,go to cabinet 5,go to cabinet 6,go to cabinet 7,go to cabinet 8,go to cabinet 9,go to coffeemachine 1,go to countertop 1,go to diningtable 1,go to drawer 1,go to drawer 2,go to fridge 1,go to garbagecan 1,go to microwave 1,go to sinkbasin 1,go to stoveburner 1,go to stoveburner 2,go to stoveburner 3,go to stoveburner 4,go to toaster 1,help,inventory,look,open cabinet 3",
+            "progress": "Cabinet 1 checked and empty; cabinet 2 contains only dishsponge 1; at closed cabinet 3. Mug not found. Remaining: find a mug, cool it, and put it in coffeemachine 1.",
+            "loop_warning": "No repeated-state warning.",
+            "inventory_before_action": [],
+            "candidates": [
+              "open cabinet 3"
+            ],
+            "proposal_output": null,
+            "proposal_response": null,
+            "wm_inputs": [],
+            "predictions": [],
+            "wm_responses": [],
+            "decision": "Progress: Cabinet 1 checked and empty; cabinet 2 contains only dishsponge 1; at closed cabinet 3. Mug not found. Remaining: find a mug, cool it, and put it in coffeemachine 1.\nRationale: Cabinet 3 is unchecked and may contain the mug.\nAction: open cabinet 3",
+            "decision_response": {
+              "content": "Progress: Cabinet 1 checked and empty; cabinet 2 contains only dishsponge 1; at closed cabinet 3. Mug not found. Remaining: find a mug, cool it, and put it in coffeemachine 1.\nRationale: Cabinet 3 is unchecked and may contain the mug.\nAction: open cabinet 3",
+              "role": "assistant"
+            },
+            "decision_rationale": "Cabinet 3 is unchecked and may contain the mug.",
+            "selection_fallback": false,
+            "action": "open cabinet 3",
+            "real_observation": "You open the cabinet 3. The cabinet 3 is open. In it, you see a mug 1.",
+            "done": false,
+            "reward": 0.0
+          },
+          {
+            "step": 7,
+            "state": "You open the cabinet 3. The cabinet 3 is open. In it, you see a mug 1.\nAVAILABLE ACTIONS: close cabinet 3,examine cabinet 3,go to cabinet 1,go to cabinet 10,go to cabinet 2,go to cabinet 4,go to cabinet 5,go to cabinet 6,go to cabinet 7,go to cabinet 8,go to cabinet 9,go to coffeemachine 1,go to countertop 1,go to diningtable 1,go to drawer 1,go to drawer 2,go to fridge 1,go to garbagecan 1,go to microwave 1,go to sinkbasin 1,go to stoveburner 1,go to stoveburner 2,go to stoveburner 3,go to stoveburner 4,go to toaster 1,help,inventory,look,take mug 1 from cabinet 3",
+            "progress": "Cabinet 3 checked; mug 1 found. Remaining: take mug 1, cool it, and put it in coffeemachine 1.",
+            "loop_warning": "No repeated-state warning.",
+            "inventory_before_action": [],
+            "candidates": [
+              "take mug 1 from cabinet 3"
+            ],
+            "proposal_output": null,
+            "proposal_response": null,
+            "wm_inputs": [],
+            "predictions": [],
+            "wm_responses": [],
+            "decision": "Progress: Cabinet 3 checked; mug 1 found. Remaining: take mug 1, cool it, and put it in coffeemachine 1.  \nRationale: Taking the discovered mug advances the next unmet requirement.  \nAction: take mug 1 from cabinet 3",
+            "decision_response": {
+              "content": "Progress: Cabinet 3 checked; mug 1 found. Remaining: take mug 1, cool it, and put it in coffeemachine 1.  \nRationale: Taking the discovered mug advances the next unmet requirement.  \nAction: take mug 1 from cabinet 3",
+              "role": "assistant"
+            },
+            "decision_rationale": "Taking the discovered mug advances the next unmet requirement.",
+            "selection_fallback": false,
+            "action": "take mug 1 from cabinet 3",
+            "real_observation": "You pick up the mug 1 from the cabinet 3.",
+            "done": false,
+            "reward": 0.0
+          },
+          {
+            "step": 8,
+            "state": "You pick up the mug 1 from the cabinet 3.\nAVAILABLE ACTIONS: close cabinet 3,examine cabinet 3,examine mug 1,go to cabinet 1,go to cabinet 10,go to cabinet 2,go to cabinet 4,go to cabinet 5,go to cabinet 6,go to cabinet 7,go to cabinet 8,go to cabinet 9,go to coffeemachine 1,go to countertop 1,go to diningtable 1,go to drawer 1,go to drawer 2,go to fridge 1,go to garbagecan 1,go to microwave 1,go to sinkbasin 1,go to stoveburner 1,go to stoveburner 2,go to stoveburner 3,go to stoveburner 4,go to toaster 1,help,inventory,look,move mug 1 to cabinet 3",
+            "progress": "Cabinet 3 checked; mug 1 found and taken. Remaining: cool mug 1 and put it in coffeemachine 1.",
+            "loop_warning": "No repeated-state warning.",
+            "inventory_before_action": [
+              "mug 1"
+            ],
+            "candidates": [
+              "go to fridge 1"
+            ],
+            "proposal_output": null,
+            "proposal_response": null,
+            "wm_inputs": [],
+            "predictions": [],
+            "wm_responses": [],
+            "decision": "Progress: Cabinet 3 checked; mug 1 found and taken. Remaining: cool mug 1 and put it in coffeemachine 1.  \nRationale: The mug is in inventory; go to the fridge to find the available cooling action.  \nAction: go to fridge 1",
+            "decision_response": {
+              "content": "Progress: Cabinet 3 checked; mug 1 found and taken. Remaining: cool mug 1 and put it in coffeemachine 1.  \nRationale: The mug is in inventory; go to the fridge to find the available cooling action.  \nAction: go to fridge 1",
+              "role": "assistant"
+            },
+            "decision_rationale": "The mug is in inventory; go to the fridge to find the available cooling action.",
+            "selection_fallback": false,
+            "action": "go to fridge 1",
+            "real_observation": "You arrive at fridge 1. The fridge 1 is closed.",
+            "done": false,
+            "reward": 0.0
+          },
+          {
+            "step": 9,
+            "state": "You arrive at fridge 1. The fridge 1 is closed.\nAVAILABLE ACTIONS: cool mug 1 with fridge 1,examine fridge 1,examine mug 1,go to cabinet 1,go to cabinet 10,go to cabinet 2,go to cabinet 3,go to cabinet 4,go to cabinet 5,go to cabinet 6,go to cabinet 7,go to cabinet 8,go to cabinet 9,go to coffeemachine 1,go to countertop 1,go to diningtable 1,go to drawer 1,go to drawer 2,go to garbagecan 1,go to microwave 1,go to sinkbasin 1,go to stoveburner 1,go to stoveburner 2,go to stoveburner 3,go to stoveburner 4,go to toaster 1,help,inventory,look,open fridge 1",
+            "progress": "Cabinet 3 checked; mug 1 found and taken. Remaining: cool mug 1 and put it in coffeemachine 1.",
+            "loop_warning": "No repeated-state warning.",
+            "inventory_before_action": [
+              "mug 1"
+            ],
+            "candidates": [
+              "cool mug 1 with fridge 1"
+            ],
+            "proposal_output": null,
+            "proposal_response": null,
+            "wm_inputs": [],
+            "predictions": [],
+            "wm_responses": [],
+            "decision": "Progress: Cabinet 3 checked; mug 1 found and taken. Remaining: cool mug 1 and put it in coffeemachine 1.\nRationale: The mug is in inventory, and cooling it with fridge 1 is available.\nAction: cool mug 1 with fridge 1",
+            "decision_response": {
+              "content": "Progress: Cabinet 3 checked; mug 1 found and taken. Remaining: cool mug 1 and put it in coffeemachine 1.\nRationale: The mug is in inventory, and cooling it with fridge 1 is available.\nAction: cool mug 1 with fridge 1",
+              "role": "assistant"
+            },
+            "decision_rationale": "The mug is in inventory, and cooling it with fridge 1 is available.",
+            "selection_fallback": false,
+            "action": "cool mug 1 with fridge 1",
+            "real_observation": "You cool the mug 1 using the fridge 1.",
+            "done": false,
+            "reward": 0.0
+          },
+          {
+            "step": 10,
+            "state": "You cool the mug 1 using the fridge 1.\nAVAILABLE ACTIONS: cool mug 1 with fridge 1,examine fridge 1,examine mug 1,go to cabinet 1,go to cabinet 10,go to cabinet 2,go to cabinet 3,go to cabinet 4,go to cabinet 5,go to cabinet 6,go to cabinet 7,go to cabinet 8,go to cabinet 9,go to coffeemachine 1,go to countertop 1,go to diningtable 1,go to drawer 1,go to drawer 2,go to garbagecan 1,go to microwave 1,go to sinkbasin 1,go to stoveburner 1,go to stoveburner 2,go to stoveburner 3,go to stoveburner 4,go to toaster 1,help,inventory,look,open fridge 1",
+            "progress": "Cabinet 3 checked; mug 1 found and taken; mug 1 cooled. Remaining: put mug 1 in coffeemachine 1.",
+            "loop_warning": "No repeated-state warning.",
+            "inventory_before_action": [
+              "mug 1"
+            ],
+            "candidates": [
+              "go to coffeemachine 1"
+            ],
+            "proposal_output": null,
+            "proposal_response": null,
+            "wm_inputs": [],
+            "predictions": [],
+            "wm_responses": [],
+            "decision": "Progress: Cabinet 3 checked; mug 1 found and taken; mug 1 cooled. Remaining: put mug 1 in coffeemachine 1.\nRationale: Cooling succeeded; go to the coffeemachine to complete the remaining requirement.\nAction: go to coffeemachine 1",
+            "decision_response": {
+              "content": "Progress: Cabinet 3 checked; mug 1 found and taken; mug 1 cooled. Remaining: put mug 1 in coffeemachine 1.\nRationale: Cooling succeeded; go to the coffeemachine to complete the remaining requirement.\nAction: go to coffeemachine 1",
+              "role": "assistant"
+            },
+            "decision_rationale": "Cooling succeeded; go to the coffeemachine to complete the remaining requirement.",
+            "selection_fallback": false,
+            "action": "go to coffeemachine 1",
+            "real_observation": "You arrive at coffeemachine 1. On the coffeemachine 1, you see nothing.",
+            "done": false,
+            "reward": 0.0
+          },
+          {
+            "step": 11,
+            "state": "You arrive at coffeemachine 1. On the coffeemachine 1, you see nothing.\nAVAILABLE ACTIONS: examine coffeemachine 1,examine countertop 1,examine mug 1,go to cabinet 1,go to cabinet 10,go to cabinet 2,go to cabinet 3,go to cabinet 4,go to cabinet 5,go to cabinet 6,go to cabinet 7,go to cabinet 8,go to cabinet 9,go to diningtable 1,go to drawer 1,go to drawer 2,go to fridge 1,go to garbagecan 1,go to microwave 1,go to sinkbasin 1,go to stoveburner 1,go to stoveburner 2,go to stoveburner 3,go to stoveburner 4,go to toaster 1,help,inventory,look,move mug 1 to coffeemachine 1,move mug 1 to countertop 1",
+            "progress": "Cabinet 3 checked; mug 1 found, taken, and cooled. Remaining: put mug 1 in coffeemachine 1.",
+            "loop_warning": "No repeated-state warning.",
+            "inventory_before_action": [
+              "mug 1"
+            ],
+            "candidates": [
+              "move mug 1 to coffeemachine 1"
+            ],
+            "proposal_output": null,
+            "proposal_response": null,
+            "wm_inputs": [],
+            "predictions": [],
+            "wm_responses": [],
+            "decision": "Progress: Cabinet 3 checked; mug 1 found, taken, and cooled. Remaining: put mug 1 in coffeemachine 1.\nRationale: Mug 1 is in inventory and I’m at coffeemachine 1.\nAction: move mug 1 to coffeemachine 1",
+            "decision_response": {
+              "content": "Progress: Cabinet 3 checked; mug 1 found, taken, and cooled. Remaining: put mug 1 in coffeemachine 1.\nRationale: Mug 1 is in inventory and I’m at coffeemachine 1.\nAction: move mug 1 to coffeemachine 1",
+              "role": "assistant"
+            },
+            "decision_rationale": "Mug 1 is in inventory and I’m at coffeemachine 1.",
+            "selection_fallback": false,
+            "action": "move mug 1 to coffeemachine 1",
+            "real_observation": "You move the mug 1 to the coffeemachine 1.",
+            "done": true,
+            "reward": 1.0
+          }
+        ],
+        "usage": {
+          "calls": 11,
+          "prompt_tokens": 7171,
+          "completion_tokens": 987
+        }
+      },
+      "wm_assisted": {
+        "success": 0,
+        "steps": [],
+        "usage": {
+          "calls": 0,
+          "prompt_tokens": 0,
+          "completion_tokens": 0
+        },
+        "error": "ValueError: No goal-consistent available actions for task 2420: cool some mug and put it in coffeemachine."
+      }
+    }
+  ]
+}

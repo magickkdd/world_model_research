@@ -1,0 +1,280 @@
+{
+  "model": "gpt-6-luna",
+  "base_url": "https://spacetimeai.cc/v1",
+  "fewshot": 3,
+  "demonstrations": [
+    {
+      "item_id": 0,
+      "task_type": "look_at_obj_in_light-AlarmClock-None-DeskLamp-301",
+      "facts": "=== Objects on Receptacles ===\n - On the bed 1, you see a book 1, a cellphone 1, a cellphone 2, a cellphone 3, a laptop 1, a pillow 1\n - On the desk 1, you see a alarmclock 1, a bowl 1, a cd 1, a cd 2, a mug 1, a mug 2, a pencil 1\n - drawer 1 is closed, if opened, in it, you see nothing.\n - On the drawer 12, you see a cd 3\n - On the drawer 13, you see a tissuebox 3\n - On the drawer 16, you see a keychain 2\n - On the drawer 17, you see a creditcard 3\n - drawer 2 is closed, if opened, in it, you see nothing.\n - On the drawer 3, you see a creditcard 1\n - On the drawer 4, you see a tissuebox 2\n - drawer 5 is closed, if opened, on the drawer 5, you see a tissuebox 1\n - drawer 6 is closed, if opened, in it, you see nothing.\n - drawer 7 is closed, if opened, in it, you see nothing.\n - drawer 8 is closed, if opened, in it, you see nothing.\n - drawer 9 is closed, if opened, in it, you see nothing.\n - On the dresser 1, you see a alarmclock 2, a desklamp 1, a keychain 1, a keychain 3, a watch 1\n - On the shelf 2, you see a pen 1\n - On the shelf 5, you see a creditcard 2, a statue 1\n - On the shelf 6, you see a pencil 2\n\n=== Toggle States ===\n - desklamp 1 is off",
+      "state": "You are in the middle of a room. Looking quickly around you, you see a bed 1, a desk 1, a drawer 17, a drawer 16, a drawer 15, a drawer 14, a drawer 13, a drawer 12, a drawer 11, a drawer 10, a drawer 9, a drawer 8, a drawer 7, a drawer 6, a drawer 5, a drawer 4, a drawer 3, a drawer 2, a drawer 1, a dresser 1, a garbagecan 1, a shelf 6, a shelf 5, a shelf 4, a shelf 3, a shelf 2, and a shelf 1.\nYour task is to: look at alarmclock under the desklamp.\nAVAILABLE ACTIONS: go to bed 1,go to desk 1,go to drawer 1,go to drawer 10,go to drawer 11,go to drawer 12,go to drawer 13,go to drawer 14,go to drawer 15,go to drawer 16,go to drawer 17,go to drawer 2,go to drawer 3,go to drawer 4,go to drawer 5,go to drawer 6,go to drawer 7,go to drawer 8,go to drawer 9,go to dresser 1,go to garbagecan 1,go to shelf 1,go to shelf 2,go to shelf 3,go to shelf 4,go to shelf 5,go to shelf 6,help,inventory,look",
+      "action": "go to bed 1",
+      "next_state": "You arrive at bed 1. On the bed 1, you see a book 1, a cellphone 3, a cellphone 2, a cellphone 1, a laptop 1, and a pillow 1."
+    },
+    {
+      "item_id": 0,
+      "task_type": "look_at_obj_in_light-AlarmClock-None-DeskLamp-301",
+      "facts": "=== Objects on Receptacles ===\n - On the bed 1, you see a book 1, a cellphone 1, a cellphone 2, a cellphone 3, a laptop 1, a pillow 1\n - On the desk 1, you see a alarmclock 1, a bowl 1, a cd 1, a cd 2, a mug 1, a mug 2, a pencil 1\n - drawer 1 is closed, if opened, in it, you see nothing.\n - On the drawer 12, you see a cd 3\n - On the drawer 13, you see a tissuebox 3\n - On the drawer 16, you see a keychain 2\n - On the drawer 17, you see a creditcard 3\n - drawer 2 is closed, if opened, in it, you see nothing.\n - On the drawer 3, you see a creditcard 1\n - On the drawer 4, you see a tissuebox 2\n - drawer 5 is closed, if opened, on the drawer 5, you see a tissuebox 1\n - drawer 6 is closed, if opened, in it, you see nothing.\n - drawer 7 is closed, if opened, in it, you see nothing.\n - drawer 8 is closed, if opened, in it, you see nothing.\n - drawer 9 is closed, if opened, in it, you see nothing.\n - On the dresser 1, you see a alarmclock 2, a desklamp 1, a keychain 1, a keychain 3, a watch 1\n - On the shelf 2, you see a pen 1\n - On the shelf 5, you see a creditcard 2, a statue 1\n - On the shelf 6, you see a pencil 2\n\n=== Toggle States ===\n - desklamp 1 is off",
+      "state": "You arrive at bed 1. On the bed 1, you see a book 1, a cellphone 3, a cellphone 2, a cellphone 1, a laptop 1, and a pillow 1.\nAVAILABLE ACTIONS: examine bed 1,go to desk 1,go to drawer 1,go to drawer 10,go to drawer 11,go to drawer 12,go to drawer 13,go to drawer 14,go to drawer 15,go to drawer 16,go to drawer 17,go to drawer 2,go to drawer 3,go to drawer 4,go to drawer 5,go to drawer 6,go to drawer 7,go to drawer 8,go to drawer 9,go to dresser 1,go to garbagecan 1,go to shelf 1,go to shelf 2,go to shelf 3,go to shelf 4,go to shelf 5,go to shelf 6,help,inventory,look,take book 1 from bed 1,take cellphone 1 from bed 1,take cellphone 2 from bed 1,take cellphone 3 from bed 1,take laptop 1 from bed 1,take pillow 1 from bed 1",
+      "action": "take book 1 from bed 1",
+      "next_state": "You pick up the book 1 from the bed 1."
+    },
+    {
+      "item_id": 0,
+      "task_type": "look_at_obj_in_light-AlarmClock-None-DeskLamp-301",
+      "facts": "=== Objects on Receptacles ===\n - On the bed 1, you see a book 1, a cellphone 1, a cellphone 2, a cellphone 3, a laptop 1, a pillow 1\n - On the desk 1, you see a alarmclock 1, a bowl 1, a cd 1, a cd 2, a mug 1, a mug 2, a pencil 1\n - drawer 1 is closed, if opened, in it, you see nothing.\n - On the drawer 12, you see a cd 3\n - On the drawer 13, you see a tissuebox 3\n - On the drawer 16, you see a keychain 2\n - On the drawer 17, you see a creditcard 3\n - drawer 2 is closed, if opened, in it, you see nothing.\n - On the drawer 3, you see a creditcard 1\n - On the drawer 4, you see a tissuebox 2\n - drawer 5 is closed, if opened, on the drawer 5, you see a tissuebox 1\n - drawer 6 is closed, if opened, in it, you see nothing.\n - drawer 7 is closed, if opened, in it, you see nothing.\n - drawer 8 is closed, if opened, in it, you see nothing.\n - drawer 9 is closed, if opened, in it, you see nothing.\n - On the dresser 1, you see a alarmclock 2, a desklamp 1, a keychain 1, a keychain 3, a watch 1\n - On the shelf 2, you see a pen 1\n - On the shelf 5, you see a creditcard 2, a statue 1\n - On the shelf 6, you see a pencil 2\n\n=== Toggle States ===\n - desklamp 1 is off",
+      "state": "You pick up the book 1 from the bed 1.\nAVAILABLE ACTIONS: examine bed 1,examine book 1,go to desk 1,go to drawer 1,go to drawer 10,go to drawer 11,go to drawer 12,go to drawer 13,go to drawer 14,go to drawer 15,go to drawer 16,go to drawer 17,go to drawer 2,go to drawer 3,go to drawer 4,go to drawer 5,go to drawer 6,go to drawer 7,go to drawer 8,go to drawer 9,go to dresser 1,go to garbagecan 1,go to shelf 1,go to shelf 2,go to shelf 3,go to shelf 4,go to shelf 5,go to shelf 6,help,inventory,look,move book 1 to bed 1",
+      "action": "examine bed 1",
+      "next_state": "On the bed 1, you see a cellphone 3, a cellphone 2, a cellphone 1, a laptop 1, and a pillow 1."
+    }
+  ],
+  "metrics": {
+    "n": 20,
+    "zero_shot_exact_accuracy": 0.1,
+    "few_shot_exact_accuracy": 0.45,
+    "zero_shot_normalized_exact_accuracy": 0.1,
+    "few_shot_normalized_exact_accuracy": 0.45
+  },
+  "predictions": [
+    {
+      "item_id": 2420,
+      "task_type": "pick_cool_then_place_in_recep-Mug-None-CoffeeMachine-23",
+      "action": "go to cabinet 1",
+      "ground_truth": "You arrive at cabinet 1. The cabinet 1 is closed.",
+      "zero_shot": "You arrive at cabinet 1. The cabinet 1 is closed.",
+      "few_shot": "You arrive at cabinet 1. The cabinet 1 is closed.",
+      "zero_shot_exact": true,
+      "few_shot_exact": true,
+      "zero_shot_normalized_exact": true,
+      "few_shot_normalized_exact": true
+    },
+    {
+      "item_id": 2421,
+      "task_type": "pick_two_obj_and_place-TissueBox-None-CoffeeTable-220",
+      "action": "go to armchair 1",
+      "ground_truth": "You arrive at armchair 1. On the armchair 1, you see a remotecontrol 3.",
+      "zero_shot": "You are now at the armchair 1. On it, you see a remotecontrol 3.",
+      "few_shot": "You arrive at armchair 1. On the armchair 1, you see a remotecontrol 3.",
+      "zero_shot_exact": false,
+      "few_shot_exact": true,
+      "zero_shot_normalized_exact": false,
+      "few_shot_normalized_exact": true
+    },
+    {
+      "item_id": 2422,
+      "task_type": "pick_clean_then_place_in_recep-SoapBar-None-GarbageCan-429",
+      "action": "go to bathtubbasin 1",
+      "ground_truth": "You arrive at bathtubbasin 1. On the bathtubbasin 1, you see a cloth 3, a cloth 2, a soapbar 2, and a soapbar 1.",
+      "zero_shot": "You arrive at bathtubbasin 1. On the bathtubbasin 1, you see a cloth 2, a cloth 3, a soapbar 1, and a soapbar 2.",
+      "few_shot": "You arrive at bathtubbasin 1. On the bathtubbasin 1, you see a cloth 3, a cloth 2, a soapbar 2, and a soapbar 1.",
+      "zero_shot_exact": false,
+      "few_shot_exact": true,
+      "zero_shot_normalized_exact": false,
+      "few_shot_normalized_exact": true
+    },
+    {
+      "item_id": 2423,
+      "task_type": "pick_and_place_simple-Pillow-None-ArmChair-321",
+      "action": "go to armchair 1",
+      "ground_truth": "You arrive at armchair 1. On the armchair 1, you see nothing.",
+      "zero_shot": "You are now near the armchair 1. On the armchair 1, you see nothing.",
+      "few_shot": "You arrive at armchair 1. [SUCCESS]",
+      "zero_shot_exact": false,
+      "few_shot_exact": false,
+      "zero_shot_normalized_exact": false,
+      "few_shot_normalized_exact": false
+    },
+    {
+      "item_id": 2424,
+      "task_type": "pick_heat_then_place_in_recep-Apple-None-SideTable-28",
+      "action": "go to cabinet 1",
+      "ground_truth": "You arrive at cabinet 1. The cabinet 1 is closed.",
+      "zero_shot": "You arrive at cabinet 1. It is closed.",
+      "few_shot": "You arrive at cabinet 1. The cabinet 1 is closed. You can open it.",
+      "zero_shot_exact": false,
+      "few_shot_exact": false,
+      "zero_shot_normalized_exact": false,
+      "few_shot_normalized_exact": false
+    },
+    {
+      "item_id": 2427,
+      "task_type": "look_at_obj_in_light-Book-None-DeskLamp-302",
+      "action": "go to bed 1",
+      "ground_truth": "You arrive at bed 1. On the bed 1, you see a book 1, a cellphone 1, a laptop 2, a laptop 1, a pillow 1, and a teddybear 1.",
+      "zero_shot": "You arrive at bed 1. On the bed 1, you see a book 1, a cellphone 1, a laptop 1, a laptop 2, a pillow 1, and a teddybear 1.",
+      "few_shot": "You arrive at bed 1. On the bed 1, you see a book 1, a cellphone 2, a laptop 2, a laptop 1, a pillow 1, and a teddybear 1.",
+      "zero_shot_exact": false,
+      "few_shot_exact": false,
+      "zero_shot_normalized_exact": false,
+      "few_shot_normalized_exact": false
+    },
+    {
+      "item_id": 2431,
+      "task_type": "pick_cool_then_place_in_recep-Tomato-None-Microwave-13",
+      "action": "go to cabinet 1",
+      "ground_truth": "You arrive at cabinet 1. On the cabinet 1, you see nothing.",
+      "zero_shot": "You arrive at cabinet 1. The cabinet is closed.",
+      "few_shot": "You arrive at cabinet 1. The cabinet 1 is closed.",
+      "zero_shot_exact": false,
+      "few_shot_exact": false,
+      "zero_shot_normalized_exact": false,
+      "few_shot_normalized_exact": false
+    },
+    {
+      "item_id": 2428,
+      "task_type": "pick_two_obj_and_place-CellPhone-None-Sofa-224",
+      "action": "go to armchair 1",
+      "ground_truth": "You arrive at armchair 1. On the armchair 1, you see a cellphone 4, a cellphone 3, and a keychain 2.",
+      "zero_shot": "You are at the armchair 1. On the armchair 1, you see a cellphone 3, a cellphone 4, and a keychain 2.",
+      "few_shot": "You arrive at armchair 1. On the armchair 1, you see a cellphone 3, a cellphone 4, and a keychain 2.",
+      "zero_shot_exact": false,
+      "few_shot_exact": false,
+      "zero_shot_normalized_exact": false,
+      "few_shot_normalized_exact": false
+    },
+    {
+      "item_id": 2425,
+      "task_type": "pick_clean_then_place_in_recep-DishSponge-None-Shelf-20",
+      "action": "go to cabinet 1",
+      "ground_truth": "You arrive at cabinet 1. The cabinet 1 is closed.",
+      "zero_shot": "You arrive at cabinet 1.",
+      "few_shot": "You arrive at cabinet 1. The cabinet 1 is closed.",
+      "zero_shot_exact": false,
+      "few_shot_exact": true,
+      "zero_shot_normalized_exact": false,
+      "few_shot_normalized_exact": true
+    },
+    {
+      "item_id": 2426,
+      "task_type": "pick_and_place_simple-Tomato-None-Microwave-8",
+      "action": "go to cabinet 1",
+      "ground_truth": "You arrive at cabinet 1. The cabinet 1 is closed.",
+      "zero_shot": "You are near cabinet 1. The cabinet 1 is closed.",
+      "few_shot": "You arrive at cabinet 1. The cabinet 1 is closed.",
+      "zero_shot_exact": false,
+      "few_shot_exact": true,
+      "zero_shot_normalized_exact": false,
+      "few_shot_normalized_exact": true
+    },
+    {
+      "item_id": 2436,
+      "task_type": "pick_heat_then_place_in_recep-Tomato-None-Fridge-12",
+      "action": "go to cabinet 1",
+      "ground_truth": "You arrive at cabinet 1. The cabinet 1 is closed.",
+      "zero_shot": "You are now at cabinet 1.",
+      "few_shot": "You arrive at cabinet 1. It is closed.",
+      "zero_shot_exact": false,
+      "few_shot_exact": false,
+      "zero_shot_normalized_exact": false,
+      "few_shot_normalized_exact": false
+    },
+    {
+      "item_id": 2458,
+      "task_type": "look_at_obj_in_light-CreditCard-None-DeskLamp-314",
+      "action": "go to bed 1",
+      "ground_truth": "You arrive at bed 1. On the bed 1, you see a cellphone 2, and a pillow 1.",
+      "zero_shot": "You are at the bed 1. You see a cellphone 2 and a pillow 1.",
+      "few_shot": "You arrive at bed 1. On the bed 1, you see a cellphone 2 and a pillow 1.",
+      "zero_shot_exact": false,
+      "few_shot_exact": false,
+      "zero_shot_normalized_exact": false,
+      "few_shot_normalized_exact": false
+    },
+    {
+      "item_id": 2435,
+      "task_type": "pick_cool_then_place_in_recep-Mug-None-CoffeeMachine-14",
+      "action": "go to cabinet 1",
+      "ground_truth": "You arrive at cabinet 1. On the cabinet 1, you see a soapbottle 1.",
+      "zero_shot": "You are at the cabinet 1. On the cabinet 1, you see a soapbottle 1.",
+      "few_shot": "You arrive at cabinet 1. On the cabinet 1, you see a soapbottle 1.",
+      "zero_shot_exact": false,
+      "few_shot_exact": true,
+      "zero_shot_normalized_exact": false,
+      "few_shot_normalized_exact": true
+    },
+    {
+      "item_id": 2430,
+      "task_type": "pick_two_obj_and_place-CreditCard-None-Sofa-206",
+      "action": "go to armchair 1",
+      "ground_truth": "You arrive at armchair 1. On the armchair 1, you see nothing.",
+      "zero_shot": "You arrive at armchair 1. You see nothing on it.",
+      "few_shot": "You arrive at armchair 1.",
+      "zero_shot_exact": false,
+      "few_shot_exact": false,
+      "zero_shot_normalized_exact": false,
+      "few_shot_normalized_exact": false
+    },
+    {
+      "item_id": 2434,
+      "task_type": "pick_clean_then_place_in_recep-Kettle-None-Shelf-7",
+      "action": "go to cabinet 1",
+      "ground_truth": "You arrive at cabinet 1. The cabinet 1 is closed.",
+      "zero_shot": "You arrive at cabinet 1. It is closed.",
+      "few_shot": "You arrive at cabinet 1. The cabinet 1 is closed.",
+      "zero_shot_exact": false,
+      "few_shot_exact": true,
+      "zero_shot_normalized_exact": false,
+      "few_shot_normalized_exact": true
+    },
+    {
+      "item_id": 2429,
+      "task_type": "pick_and_place_simple-KeyChain-None-CoffeeTable-227",
+      "action": "go to armchair 1",
+      "ground_truth": "You arrive at armchair 1. On the armchair 1, you see a keychain 3, and a pillow 1.",
+      "zero_shot": "You arrive at armchair 1. On the armchair 1, you see a keychain 3 and a pillow 1.",
+      "few_shot": "You arrive at armchair 1. On the armchair 1, you see a keychain 3 and a pillow 1.",
+      "zero_shot_exact": false,
+      "few_shot_exact": false,
+      "zero_shot_normalized_exact": false,
+      "few_shot_normalized_exact": false
+    },
+    {
+      "item_id": 2443,
+      "task_type": "pick_heat_then_place_in_recep-Tomato-None-Fridge-15",
+      "action": "go to cabinet 1",
+      "ground_truth": "You arrive at cabinet 1. On the cabinet 1, you see a bowl 1.",
+      "zero_shot": "You arrive at cabinet 1. On the cabinet 1, you see a bowl 1.",
+      "few_shot": "You arrive at cabinet 1. On the cabinet 1, you see a bowl 1.",
+      "zero_shot_exact": true,
+      "few_shot_exact": true,
+      "zero_shot_normalized_exact": true,
+      "few_shot_normalized_exact": true
+    },
+    {
+      "item_id": 2482,
+      "task_type": "look_at_obj_in_light-KeyChain-None-DeskLamp-327",
+      "action": "go to bed 1",
+      "ground_truth": "You arrive at bed 1. On the bed 1, you see a book 2, a cellphone 3, and a pillow 1.",
+      "zero_shot": "You move to the bed 1. On the bed 1, you see a book 2, a cellphone 3, and a pillow 1.",
+      "few_shot": "You arrive at bed 1. On the bed 1, you see a book 2, a cellphone 3, and a pillow 1.",
+      "zero_shot_exact": false,
+      "few_shot_exact": true,
+      "zero_shot_normalized_exact": false,
+      "few_shot_normalized_exact": true
+    },
+    {
+      "item_id": 2451,
+      "task_type": "pick_cool_then_place_in_recep-Pan-None-DiningTable-11",
+      "action": "go to cabinet 1",
+      "ground_truth": "You arrive at cabinet 1. The cabinet 1 is closed.",
+      "zero_shot": "You are at the cabinet 1. You see a cabinet 1. The cabinet 1 is closed.",
+      "few_shot": "You arrive at cabinet 1. cabinet 1 is closed. On the cabinet 1, you see a mug 1 and a saltshaker 1.",
+      "zero_shot_exact": false,
+      "few_shot_exact": false,
+      "zero_shot_normalized_exact": false,
+      "few_shot_normalized_exact": false
+    },
+    {
+      "item_id": 2432,
+      "task_type": "pick_two_obj_and_place-CD-None-Dresser-303",
+      "action": "go to bed 1",
+      "ground_truth": "You arrive at bed 1. On the bed 1, you see a laptop 1, and a pillow 1.",
+      "zero_shot": "You are at the bed 1. On the bed 1, you see a laptop 1 and a pillow 1.",
+      "few_shot": "You arrive at bed 1. On the bed 1, you see a laptop 1 and a pillow 1.",
+      "zero_shot_exact": false,
+      "few_shot_exact": false,
+      "zero_shot_normalized_exact": false,
+      "few_shot_normalized_exact": false
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "source": "ALFWorld training trajectories executed in the text environment",
+  "selection": "Up to three distinct normalized action-result patterns per transition type; no layout facts are included.",
+  "examples_per_transition_type": 3,
+  "transition_counts": {
+    "GotoLocation": 3,
+    "PickupObject": 3,
+    "ToggleObject": 1,
+    "PutObject": 3,
+    "CleanObject": 2,
+    "CoolObject": 1,
+    "HeatObject": 1,
+    "ExamineObject": 3,
+    "OpenObject": 3,
+    "CloseObject": 2
+  },
+  "demonstrations": [
+    {
+      "item_id": 0,
+      "task_type": "look_at_obj_in_light-AlarmClock-None-DeskLamp-301",
+      "transition_type": "GotoLocation",
+      "state": "You are in the middle of a room. Looking quickly around you, you see a bed 1, a desk 1, a drawer 17, a drawer 16, a drawer 15, a drawer 14, a drawer 13, a drawer 12, a drawer 11, a drawer 10, a drawer 9, a drawer 8, a drawer 7, a drawer 6, a drawer 5, a drawer 4, a drawer 3, a drawer 2, a drawer 1, a dresser 1, a garbagecan 1, a shelf 6, a shelf 5, a shelf 4, a shelf 3, a shelf 2, and a shelf 1.\nYour task is to: look at alarmclock under the desklamp.\nAVAILABLE ACTIONS: go to bed 1,go to desk 1,go to drawer 1,go to drawer 10,go to drawer 11,go to drawer 12,go to drawer 13,go to drawer 14,go to drawer 15,go to drawer 16,go to drawer 17,go to drawer 2,go to drawer 3,go to drawer 4,go to drawer 5,go to drawer 6,go to drawer 7,go to drawer 8,go to drawer 9,go to dresser 1,go to garbagecan 1,go to shelf 1,go to shelf 2,go to shelf 3,go to shelf 4,go to shelf 5,go to shelf 6,help,inventory,look",
+      "action": "go to dresser 1",
+      "next_state": "You arrive at dresser 1. On the dresser 1, you see a alarmclock 2, a desklamp 1, a keychain 3, a keychain 1, and a watch 1."
+    },
+    {
+      "item_id": 1316,
+      "task_type": "pick_cool_then_place_in_recep-Apple-None-DiningTable-15",
+      "transition_type": "GotoLocation",
+      "state": "You pick up the apple 3 from the diningtable 1.\nAVAILABLE ACTIONS: examine apple 3,examine diningtable 1,go to cabinet 1,go to cabinet 10,go to cabinet 11,go to cabinet 2,go to cabinet 3,go to cabinet 4,go to cabinet 5,go to cabinet 6,go to cabinet 7,go to cabinet 8,go to cabinet 9,go to coffeemachine 1,go to countertop 1,go to countertop 2,go to drawer 1,go to drawer 2,go to drawer 3,go to fridge 1,go to garbagecan 1,go to microwave 1,go to sinkbasin 1,go to stoveburner 1,go to stoveburner 2,go to stoveburner 3,go to stoveburner 4,go to toaster 1,help,inventory,look,move apple 3 to diningtable 1",
+      "action": "go to fridge 1",
+      "next_state": "You arrive at fridge 1. The fridge 1 is closed."
+    },
+    {
+      "item_id": 0,
+      "task_type": "look_at_obj_in_light-AlarmClock-None-DeskLamp-301",
+      "transition_type": "GotoLocation",
+      "state": "You pick up the alarmclock 2 from the dresser 1.\nAVAILABLE ACTIONS: examine alarmclock 2,examine dresser 1,go to bed 1,go to desk 1,go to drawer 1,go to drawer 10,go to drawer 11,go to drawer 12,go to drawer 13,go to drawer 14,go to drawer 15,go to drawer 16,go to drawer 17,go to drawer 2,go to drawer 3,go to drawer 4,go to drawer 5,go to drawer 6,go to drawer 7,go to drawer 8,go to drawer 9,go to garbagecan 1,go to shelf 1,go to shelf 2,go to shelf 3,go to shelf 4,go to shelf 5,go to shelf 6,help,inventory,look,move alarmclock 2 to dresser 1,use desklamp 1",
+      "action": "go to drawer 16",
+      "next_state": "You arrive at drawer 16. On the drawer 16, you see a keychain 2."
+    },
+    {
+      "item_id": 0,
+      "task_type": "look_at_obj_in_light-AlarmClock-None-DeskLamp-301",
+      "transition_type": "PickupObject",
+      "state": "You arrive at dresser 1. On the dresser 1, you see a alarmclock 2, a desklamp 1, a keychain 3, a keychain 1, and a watch 1.\nAVAILABLE ACTIONS: examine dresser 1,go to bed 1,go to desk 1,go to drawer 1,go to drawer 10,go to drawer 11,go to drawer 12,go to drawer 13,go to drawer 14,go to drawer 15,go to drawer 16,go to drawer 17,go to drawer 2,go to drawer 3,go to drawer 4,go to drawer 5,go to drawer 6,go to drawer 7,go to drawer 8,go to drawer 9,go to garbagecan 1,go to shelf 1,go to shelf 2,go to shelf 3,go to shelf 4,go to shelf 5,go to shelf 6,help,inventory,look,take alarmclock 2 from dresser 1,take keychain 1 from dresser 1,take keychain 3 from dresser 1,take watch 1 from dresser 1,use desklamp 1",
+      "action": "take alarmclock 2 from dresser 1",
+      "next_state": "You pick up the alarmclock 2 from the dresser 1."
+    },
+    {
+      "item_id": 196,
+      "task_type": "pick_and_place_simple-AlarmClock-None-Desk-307",
+      "transition_type": "PickupObject",
+      "state": "You arrive at sidetable 1. On the sidetable 1, you see a alarmclock 2, a alarmclock 1, a creditcard 1, a desklamp 1, a keychain 1, and a pen 1.\nAVAILABLE ACTIONS: examine sidetable 1,go to bed 1,go to desk 1,go to drawer 1,go to drawer 2,go to drawer 3,go to garbagecan 1,go to laundryhamper 1,go to shelf 1,go to shelf 2,help,inventory,look,take alarmclock 1 from sidetable 1,take alarmclock 2 from sidetable 1,take creditcard 1 from sidetable 1,take keychain 1 from sidetable 1,take pen 1 from sidetable 1,use desklamp 1",
+      "action": "take alarmclock 2 from sidetable 1",
+      "next_state": "You pick up the alarmclock 2 from the sidetable 1."
+    },
+    {
+      "item_id": 868,
+      "task_type": "pick_clean_then_place_in_recep-Apple-None-DiningTable-19",
+      "transition_type": "PickupObject",
+      "state": "You arrive at countertop 1. On the countertop 1, you see a apple 2, a bowl 3, a bread 2, a butterknife 1, a cup 1, a fork 1, a knife 3, a knife 1, a saltshaker 1, a spatula 2, a spatula 1, a spoon 1, and a tomato 1.\nAVAILABLE ACTIONS: examine countertop 1,go to cabinet 1,go to cabinet 10,go to cabinet 11,go to cabinet 12,go to cabinet 13,go to cabinet 14,go to cabinet 15,go to cabinet 16,go to cabinet 17,go to cabinet 18,go to cabinet 19,go to cabinet 2,go to cabinet 20,go to cabinet 21,go to cabinet 3,go to cabinet 4,go to cabinet 5,go to cabinet 6,go to cabinet 7,go to cabinet 8,go to cabinet 9,go to coffeemachine 1,go to countertop 2,go to diningtable 1,go to drawer 1,go to drawer 2,go to drawer 3,go to drawer 4,go to drawer 5,go to fridge 1,go to garbagecan 1,go to microwave 1,go to sinkbasin 1,go to stoveburner 1,go to stoveburner 2,go to stoveburner 3,go to stoveburner 4,go to toaster 1,help,inventory,look,take apple 2 from countertop 1,take bowl 3 from countertop 1,take bread 2 from countertop 1,take butterknife 1 from countertop 1,take cup 1 from countertop 1,take fork 1 from countertop 1,take knife 1 from countertop 1,take knife 3 from countertop 1,take saltshaker 1 from countertop 1,take spatula 1 from countertop 1,take spatula 2 from countertop 1,take spoon 1 from countertop 1,take tomato 1 from countertop 1",
+      "action": "take apple 2 from countertop 1",
+      "next_state": "You pick up the apple 2 from the countertop 1."
+    },
+    {
+      "item_id": 4,
+      "task_type": "look_at_obj_in_light-AlarmClock-None-DeskLamp-305",
+      "transition_type": "ToggleObject",
+      "state": "You arrive at dresser 1. On the dresser 1, you see a desklamp 1, a mug 3, and a pencil 1.\nAVAILABLE ACTIONS: examine alarmclock 1,examine dresser 1,go to bed 1,go to desk 1,go to drawer 1,go to drawer 2,go to drawer 3,go to drawer 4,go to drawer 5,go to garbagecan 1,go to laundryhamper 1,go to shelf 1,help,inventory,look,move alarmclock 1 to dresser 1,use desklamp 1",
+      "action": "use desklamp 1",
+      "next_state": "You turn on the desklamp 1."
+    },
+    {
+      "item_id": 211,
+      "task_type": "pick_and_place_simple-Book-None-ArmChair-209",
+      "transition_type": "PutObject",
+      "state": "You arrive at armchair 1. On the armchair 1, you see a creditcard 1, a pillow 2, and a remotecontrol 1.\nAVAILABLE ACTIONS: examine armchair 1,examine book 1,go to coffeetable 1,go to drawer 1,go to drawer 2,go to drawer 3,go to drawer 4,go to dresser 1,go to garbagecan 1,go to sidetable 1,go to sidetable 2,go to sofa 1,help,inventory,look,move book 1 to armchair 1",
+      "action": "move book 1 to armchair 1",
+      "next_state": "You move the book 1 to the armchair 1."
+    },
+    {
+      "item_id": 868,
+      "task_type": "pick_clean_then_place_in_recep-Apple-None-DiningTable-19",
+      "transition_type": "PutObject",
+      "state": "You arrive at diningtable 1. On the diningtable 1, you see a bowl 1, a bread 1, a cup 3, a dishsponge 1, a knife 2, a lettuce 1, a peppershaker 2, a peppershaker 1, and a spatula 3.\nAVAILABLE ACTIONS: examine apple 2,examine diningtable 1,go to cabinet 1,go to cabinet 10,go to cabinet 11,go to cabinet 12,go to cabinet 13,go to cabinet 14,go to cabinet 15,go to cabinet 16,go to cabinet 17,go to cabinet 18,go to cabinet 19,go to cabinet 2,go to cabinet 20,go to cabinet 21,go to cabinet 3,go to cabinet 4,go to cabinet 5,go to cabinet 6,go to cabinet 7,go to cabinet 8,go to cabinet 9,go to coffeemachine 1,go to countertop 1,go to countertop 2,go to drawer 1,go to drawer 2,go to drawer 3,go to drawer 4,go to drawer 5,go to fridge 1,go to garbagecan 1,go to microwave 1,go to sinkbasin 1,go to stoveburner 1,go to stoveburner 2,go to stoveburner 3,go to stoveburner 4,go to toaster 1,help,inventory,look,move apple 2 to diningtable 1",
+      "action": "move apple 2 to diningtable 1",
+      "next_state": "You move the apple 2 to the diningtable 1."
+    },
+    {
+      "item_id": 881,
+      "task_type": "pick_clean_then_place_in_recep-Apple-None-SideTable-21",
+      "transition_type": "PutObject",
+      "state": "You arrive at sidetable 1. On the sidetable 1, you see a cup 1, a lettuce 1, a peppershaker 3, a potato 1, and a saltshaker 1.\nAVAILABLE ACTIONS: examine apple 3,examine sidetable 1,go to cabinet 1,go to cabinet 2,go to cabinet 3,go to cabinet 4,go to coffeemachine 1,go to countertop 1,go to diningtable 1,go to diningtable 2,go to diningtable 3,go to drawer 1,go to fridge 1,go to garbagecan 1,go to microwave 1,go to sinkbasin 1,go to stoveburner 1,go to stoveburner 2,go to stoveburner 3,go to stoveburner 4,go to toaster 1,help,inventory,look,move apple 3 to sidetable 1",
+      "action": "move apple 3 to sidetable 1",
+      "next_state": "You move the apple 3 to the sidetable 1."
+    },
+    {
+      "item_id": 868,
+      "task_type": "pick_clean_then_place_in_recep-Apple-None-DiningTable-19",
+      "transition_type": "CleanObject",
+      "state": "You arrive at sinkbasin 1. On the sinkbasin 1, you see a potato 1.\nAVAILABLE ACTIONS: clean apple 2 with sinkbasin 1,examine apple 2,examine sinkbasin 1,go to cabinet 1,go to cabinet 10,go to cabinet 11,go to cabinet 12,go to cabinet 13,go to cabinet 14,go to cabinet 15,go to cabinet 16,go to cabinet 17,go to cabinet 18,go to cabinet 19,go to cabinet 2,go to cabinet 20,go to cabinet 21,go to cabinet 3,go to cabinet 4,go to cabinet 5,go to cabinet 6,go to cabinet 7,go to cabinet 8,go to cabinet 9,go to coffeemachine 1,go to countertop 1,go to countertop 2,go to diningtable 1,go to drawer 1,go to drawer 2,go to drawer 3,go to drawer 4,go to drawer 5,go to fridge 1,go to garbagecan 1,go to microwave 1,go to stoveburner 1,go to stoveburner 2,go to stoveburner 3,go to stoveburner 4,go to toaster 1,help,inventory,look,move apple 2 to sinkbasin 1",
+      "action": "clean apple 2 with sinkbasin 1",
+      "next_state": "You clean the apple 2 using the sinkbasin 1."
+    },
+    {
+      "item_id": 887,
+      "task_type": "pick_clean_then_place_in_recep-Bowl-None-DiningTable-23",
+      "transition_type": "CleanObject",
+      "state": "You arrive at sinkbasin 1. On the sinkbasin 1, you see nothing.\nAVAILABLE ACTIONS: clean bowl 1 with sinkbasin 1,examine bowl 1,examine sinkbasin 1,go to cabinet 1,go to cabinet 10,go to cabinet 2,go to cabinet 3,go to cabinet 4,go to cabinet 5,go to cabinet 6,go to cabinet 7,go to cabinet 8,go to cabinet 9,go to coffeemachine 1,go to countertop 1,go to diningtable 1,go to drawer 1,go to drawer 2,go to fridge 1,go to garbagecan 1,go to microwave 1,go to stoveburner 1,go to stoveburner 2,go to stoveburner 3,go to stoveburner 4,go to toaster 1,help,inventory,look,move bowl 1 to sinkbasin 1",
+      "action": "clean bowl 1 with sinkbasin 1",
+      "next_state": "You clean the bowl 1 using the sinkbasin 1."
+    },
+    {
+      "item_id": 1316,
+      "task_type": "pick_cool_then_place_in_recep-Apple-None-DiningTable-15",
+      "transition_type": "CoolObject",
+      "state": "You arrive at fridge 1. The fridge 1 is closed.\nAVAILABLE ACTIONS: cool apple 3 with fridge 1,examine apple 3,examine fridge 1,go to cabinet 1,go to cabinet 10,go to cabinet 11,go to cabinet 2,go to cabinet 3,go to cabinet 4,go to cabinet 5,go to cabinet 6,go to cabinet 7,go to cabinet 8,go to cabinet 9,go to coffeemachine 1,go to countertop 1,go to countertop 2,go to diningtable 1,go to drawer 1,go to drawer 2,go to drawer 3,go to garbagecan 1,go to microwave 1,go to sinkbasin 1,go to stoveburner 1,go to stoveburner 2,go to stoveburner 3,go to stoveburner 4,go to toaster 1,help,inventory,look,open fridge 1",
+      "action": "cool apple 3 with fridge 1",
+      "next_state": "You cool the apple 3 using the fridge 1."
+    },
+    {
+      "item_id": 1710,
+      "task_type": "pick_heat_then_place_in_recep-Apple-None-CounterTop-2",
+      "transition_type": "HeatObject",
+      "state": "You arrive at microwave 1. The microwave 1 is closed.\nAVAILABLE ACTIONS: examine apple 2,examine microwave 1,go to cabinet 1,go to cabinet 2,go to cabinet 3,go to cabinet 4,go to cabinet 5,go to cabinet 6,go to cabinet 7,go to cabinet 8,go to cabinet 9,go to coffeemachine 1,go to countertop 1,go to countertop 2,go to drawer 1,go to drawer 10,go to drawer 11,go to drawer 12,go to drawer 13,go to drawer 2,go to drawer 3,go to drawer 4,go to drawer 5,go to drawer 6,go to drawer 7,go to drawer 8,go to drawer 9,go to fridge 1,go to garbagecan 1,go to sinkbasin 1,go to stoveburner 1,go to stoveburner 2,go to stoveburner 3,go to stoveburner 4,go to stoveburner 5,go to stoveburner 6,go to toaster 1,heat apple 2 with microwave 1,help,inventory,look,open microwave 1",
+      "action": "heat apple 2 with microwave 1",
+      "next_state": "You heat the apple 2 using the microwave 1."
+    },
+    {
+      "item_id": 0,
+      "task_type": "look_at_obj_in_light-AlarmClock-None-DeskLamp-301",
+      "transition_type": "ExamineObject",
+      "state": "You arrive at drawer 1. The drawer 1 is closed.\nAVAILABLE ACTIONS: examine drawer 1,go to bed 1,go to desk 1,go to drawer 10,go to drawer 11,go to drawer 12,go to drawer 13,go to drawer 14,go to drawer 15,go to drawer 16,go to drawer 17,go to drawer 2,go to drawer 3,go to drawer 4,go to drawer 5,go to drawer 6,go to drawer 7,go to drawer 8,go to drawer 9,go to dresser 1,go to garbagecan 1,go to shelf 1,go to shelf 2,go to shelf 3,go to shelf 4,go to shelf 5,go to shelf 6,help,inventory,look,open drawer 1",
+      "action": "examine drawer 1",
+      "next_state": "The drawer 1 is closed."
+    },
+    {
+      "item_id": 2,
+      "task_type": "look_at_obj_in_light-AlarmClock-None-DeskLamp-304",
+      "transition_type": "ExamineObject",
+      "state": "You arrive at drawer 1. On the drawer 1, you see a book 2, and a book 1.\nAVAILABLE ACTIONS: examine desk 1,examine drawer 1,examine drawer 2,examine drawer 3,go to bed 1,go to bed 2,go to garbagecan 1,go to laundryhamper 1,go to shelf 1,help,inventory,look,take alarmclock 1 from desk 1,take book 1 from drawer 1,take book 2 from drawer 1,take bowl 1 from desk 1,take bowl 2 from desk 1,take cd 1 from drawer 3,take creditcard 1 from desk 1,take keychain 1 from drawer 2,take mug 2 from desk 1,take mug 3 from desk 1,take pen 1 from drawer 2,take pen 2 from drawer 3,take pencil 1 from drawer 3,take statue 1 from desk 1,take statue 2 from desk 1",
+      "action": "examine desk 1",
+      "next_state": "On the desk 1, you see a alarmclock 1, a bowl 2, a bowl 1, a creditcard 1, a mug 3, a mug 2, a statue 2, and a statue 1."
+    },
+    {
+      "item_id": 12,
+      "task_type": "look_at_obj_in_light-Book-None-DeskLamp-303",
+      "transition_type": "ExamineObject",
+      "state": "You arrive at drawer 1. On the drawer 1, you see nothing.\nAVAILABLE ACTIONS: examine drawer 1,examine drawer 2,examine dresser 1,go to bed 1,go to desk 1,go to drawer 3,go to drawer 4,go to drawer 5,go to garbagecan 1,go to shelf 1,go to shelf 10,go to shelf 11,go to shelf 12,go to shelf 2,go to shelf 3,go to shelf 4,go to shelf 5,go to shelf 6,go to shelf 7,go to shelf 8,go to shelf 9,go to sidetable 1,help,inventory,look,take cd 2 from dresser 1,take creditcard 1 from dresser 1,take keychain 2 from dresser 1,take pen 1 from dresser 1,take pen 2 from dresser 1,take pencil 1 from dresser 1,take vase 2 from dresser 1",
+      "action": "examine drawer 1",
+      "next_state": "On the drawer 1, you see nothing."
+    },
+    {
+      "item_id": 0,
+      "task_type": "look_at_obj_in_light-AlarmClock-None-DeskLamp-301",
+      "transition_type": "OpenObject",
+      "state": "The drawer 1 is closed.\nAVAILABLE ACTIONS: examine drawer 1,go to bed 1,go to desk 1,go to drawer 10,go to drawer 11,go to drawer 12,go to drawer 13,go to drawer 14,go to drawer 15,go to drawer 16,go to drawer 17,go to drawer 2,go to drawer 3,go to drawer 4,go to drawer 5,go to drawer 6,go to drawer 7,go to drawer 8,go to drawer 9,go to dresser 1,go to garbagecan 1,go to shelf 1,go to shelf 2,go to shelf 3,go to shelf 4,go to shelf 5,go to shelf 6,help,inventory,look,open drawer 1",
+      "action": "open drawer 1",
+      "next_state": "You open the drawer 1. The drawer 1 is open. In it, you see nothing."
+    },
+    {
+      "item_id": 5,
+      "task_type": "look_at_obj_in_light-AlarmClock-None-DeskLamp-309",
+      "transition_type": "OpenObject",
+      "state": "The cabinet 1 is closed.\nAVAILABLE ACTIONS: examine cabinet 1,go to armchair 1,go to armchair 2,go to armchair 3,go to bed 1,go to cabinet 2,go to desk 1,go to drawer 1,go to drawer 2,go to drawer 3,go to drawer 4,go to garbagecan 1,go to laundryhamper 1,go to safe 1,go to sidetable 1,help,inventory,look,open cabinet 1",
+      "action": "open cabinet 1",
+      "next_state": "You open the cabinet 1. The cabinet 1 is open. In it, you see a cd 1, and a houseplant 1."
+    },
+    {
+      "item_id": 6,
+      "task_type": "look_at_obj_in_light-AlarmClock-None-DeskLamp-309",
+      "transition_type": "OpenObject",
+      "state": "The cabinet 1 is closed.\nAVAILABLE ACTIONS: examine cabinet 1,go to armchair 1,go to armchair 2,go to armchair 3,go to bed 1,go to cabinet 2,go to desk 1,go to drawer 1,go to drawer 2,go to drawer 3,go to drawer 4,go to garbagecan 1,go to laundryhamper 1,go to safe 1,go to sidetable 1,help,inventory,look,open cabinet 1",
+      "action": "open cabinet 1",
+      "next_state": "You open the cabinet 1. The cabinet 1 is open. In it, you see a cellphone 1, and a houseplant 1."
+    },
+    {
+      "item_id": 0,
+      "task_type": "look_at_obj_in_light-AlarmClock-None-DeskLamp-301",
+      "transition_type": "CloseObject",
+      "state": "You open the drawer 1. The drawer 1 is open. In it, you see nothing.\nAVAILABLE ACTIONS: close drawer 1,examine drawer 1,go to bed 1,go to desk 1,go to drawer 10,go to drawer 11,go to drawer 12,go to drawer 13,go to drawer 14,go to drawer 15,go to drawer 16,go to drawer 17,go to drawer 2,go to drawer 3,go to drawer 4,go to drawer 5,go to drawer 6,go to drawer 7,go to drawer 8,go to drawer 9,go to dresser 1,go to garbagecan 1,go to shelf 1,go to shelf 2,go to shelf 3,go to shelf 4,go to shelf 5,go to shelf 6,help,inventory,look",
+      "action": "close drawer 1",
+      "next_state": "You close the drawer 1."
+    },
+    {
+      "item_id": 5,
+      "task_type": "look_at_obj_in_light-AlarmClock-None-DeskLamp-309",
+      "transition_type": "CloseObject",
+      "state": "You open the cabinet 1. The cabinet 1 is open. In it, you see a cd 1, and a houseplant 1.\nAVAILABLE ACTIONS: close cabinet 1,examine cabinet 1,go to armchair 1,go to armchair 2,go to armchair 3,go to bed 1,go to cabinet 2,go to desk 1,go to drawer 1,go to drawer 2,go to drawer 3,go to drawer 4,go to garbagecan 1,go to laundryhamper 1,go to safe 1,go to sidetable 1,help,inventory,look,take cd 1 from cabinet 1",
+      "action": "close cabinet 1",
+      "next_state": "You close the cabinet 1."
+    }
+  ]
+}

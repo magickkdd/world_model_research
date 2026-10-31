@@ -1,0 +1,93 @@
+diff --git a/libero/libero/envs/bddl_base_domain.py b/libero/libero/envs/bddl_base_domain.py
+index 0aa0f0c..cca4808 100644
+--- a/libero/libero/envs/bddl_base_domain.py
++++ b/libero/libero/envs/bddl_base_domain.py
+@@ -435,59 +435,44 @@ class BDDLBaseDomain(SingleArmEnv):
+
+         observables["robot0_joint_pos"]._active = True
+
+-        # low-level object information
+         if self.use_object_obs:
+-            # Get robot prefix and define observables modality
+             pf = self.robots[0].robot_model.naming_prefix
+             sensors = []
+-            names = [s.__name__ for s in sensors]
++            names = []
+
+-            # Also append handle qpos if we're using a locked drawer version with rotatable handle
+-
+-            # Create observables
+-            for name, s in zip(names, sensors):
+-                observables[name] = Observable(
+-                    name=name,
+-                    sensor=s,
+-                    sampling_rate=self.control_freq,
+-                )
+-
+-        pf = self.robots[0].robot_model.naming_prefix
+-
+-        @sensor(modality="object")
+-        def world_pose_in_gripper(obs_cache):
+-            return (
+-                T.pose_inv(
+-                    T.pose2mat((obs_cache[f"{pf}eef_pos"], obs_cache[f"{pf}eef_quat"]))
++            @sensor(modality="object")
++            def world_pose_in_gripper(obs_cache):
++                return (
++                    T.pose_inv(
++                        T.pose2mat((obs_cache[f"{pf}eef_pos"], obs_cache[f"{pf}eef_quat"]))
++                    )
++                    if f"{pf}eef_pos" in obs_cache and f"{pf}eef_quat" in obs_cache
++                    else np.eye(4)
+                 )
+-                if f"{pf}eef_pos" in obs_cache and f"{pf}eef_quat" in obs_cache
+-                else np.eye(4)
+-            )
+-
+-        sensors.append(world_pose_in_gripper)
+-        names.append("world_pose_in_gripper")
+
+-        for (i, obj) in enumerate(self.objects):
+-            obj_sensors, obj_sensor_names = self._create_obj_sensors(
+-                obj_name=obj.name, modality="object"
+-            )
++            sensors.append(world_pose_in_gripper)
++            names.append("world_pose_in_gripper")
+
+-            sensors += obj_sensors
+-            names += obj_sensor_names
+-
+-        for name, s in zip(names, sensors):
+-            if name == "world_pose_in_gripper":
+-                observables[name] = Observable(
+-                    name=name,
+-                    sensor=s,
+-                    sampling_rate=self.control_freq,
+-                    enabled=True,
+-                    active=False,
+-                )
+-            else:
+-                observables[name] = Observable(
+-                    name=name, sensor=s, sampling_rate=self.control_freq
++            for obj in self.objects:
++                obj_sensors, obj_sensor_names = self._create_obj_sensors(
++                    obj_name=obj.name, modality="object"
+                 )
++                sensors += obj_sensors
++                names += obj_sensor_names
++
++            for name, sensor_fn in zip(names, sensors):
++                if name == "world_pose_in_gripper":
++                    observables[name] = Observable(
++                        name=name,
++                        sensor=sensor_fn,
++                        sampling_rate=self.control_freq,
++                        enabled=True,
++                        active=False,
++                    )
++                else:
++                    observables[name] = Observable(
++                        name=name, sensor=sensor_fn, sampling_rate=self.control_freq
++                    )
+
+         return observables

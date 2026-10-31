@@ -1,0 +1,262 @@
+{
+  "model": "gpt-6-luna",
+  "base_url": "https://spacetimeai.cc/v1",
+  "demonstrations_file": "/home/czx/LWM/world_model_research/experiments/alfworld/outputs/api_fewshot_pilot/alfworld_gpt-6-luna_20.json",
+  "metrics": {
+    "completed_pairs": 1,
+    "requested_tasks": 1,
+    "baseline_successes": 1,
+    "wm_assisted_successes": 1,
+    "baseline_success_rate": 1.0,
+    "wm_assisted_success_rate": 1.0,
+    "paired_win_count": 0,
+    "max_steps": 12,
+    "candidate_count": 2,
+    "task_id": 2422
+  },
+  "run_error": null,
+  "results": [
+    {
+      "item_id": 2422,
+      "task_type": "pick_clean_then_place_in_recep-SoapBar-None-GarbageCan-429",
+      "baseline": {
+        "success": 1,
+        "steps": [
+          {
+            "state": "You are in the middle of a room. Looking quickly around you, you see a bathtubbasin 1, a garbagecan 1, a handtowelholder 1, a shelf 3, a shelf 2, a shelf 1, a sinkbasin 1, a toilet 1, a toiletpaperhanger 1, and a towelholder 1.\nYour task is to: put a clean soapbar in garbagecan.\nAVAILABLE ACTIONS: go to bathtubbasin 1,go to garbagecan 1,go to handtowelholder 1,go to shelf 1,go to shelf 2,go to shelf 3,go to sinkbasin 1,go to toilet 1,go to toiletpaperhanger 1,go to towelholder 1,help,inventory,look",
+            "candidates": [
+              "go to shelf 1"
+            ],
+            "predictions": [],
+            "decision": "Action: go to shelf 1",
+            "action": "go to shelf 1",
+            "real_observation": "You arrive at shelf 1. On the shelf 1, you see a candle 1, a cloth 1, a soapbottle 1, and a toiletpaper 1.",
+            "done": false,
+            "reward": 0.0
+          },
+          {
+            "state": "You arrive at shelf 1. On the shelf 1, you see a candle 1, a cloth 1, a soapbottle 1, and a toiletpaper 1.\nAVAILABLE ACTIONS: examine shelf 1,go to bathtubbasin 1,go to garbagecan 1,go to handtowelholder 1,go to shelf 2,go to shelf 3,go to sinkbasin 1,go to toilet 1,go to toiletpaperhanger 1,go to towelholder 1,help,inventory,look,take candle 1 from shelf 1,take cloth 1 from shelf 1,take soapbottle 1 from shelf 1,take toiletpaper 1 from shelf 1",
+            "candidates": [
+              "go to shelf 2"
+            ],
+            "predictions": [],
+            "decision": "Action: go to shelf 2",
+            "action": "go to shelf 2",
+            "real_observation": "You arrive at shelf 2. On the shelf 2, you see a tissuebox 1.",
+            "done": false,
+            "reward": 0.0
+          },
+          {
+            "state": "You arrive at shelf 2. On the shelf 2, you see a tissuebox 1.\nAVAILABLE ACTIONS: examine shelf 2,go to bathtubbasin 1,go to garbagecan 1,go to handtowelholder 1,go to shelf 1,go to shelf 3,go to sinkbasin 1,go to toilet 1,go to toiletpaperhanger 1,go to towelholder 1,help,inventory,look,take tissuebox 1 from shelf 2",
+            "candidates": [
+              "go to shelf 3"
+            ],
+            "predictions": [],
+            "decision": "Action: go to shelf 3",
+            "action": "go to shelf 3",
+            "real_observation": "You arrive at shelf 3. On the shelf 3, you see a candle 2, a soapbar 3, a soapbottle 3, and a toiletpaper 2.",
+            "done": false,
+            "reward": 0.0
+          },
+          {
+            "state": "You arrive at shelf 3. On the shelf 3, you see a candle 2, a soapbar 3, a soapbottle 3, and a toiletpaper 2.\nAVAILABLE ACTIONS: examine shelf 3,go to bathtubbasin 1,go to garbagecan 1,go to handtowelholder 1,go to shelf 1,go to shelf 2,go to sinkbasin 1,go to toilet 1,go to toiletpaperhanger 1,go to towelholder 1,help,inventory,look,take candle 2 from shelf 3,take soapbar 3 from shelf 3,take soapbottle 3 from shelf 3,take toiletpaper 2 from shelf 3",
+            "candidates": [
+              "take soapbar 3 from shelf 3"
+            ],
+            "predictions": [],
+            "decision": "Action: take soapbar 3 from shelf 3",
+            "action": "take soapbar 3 from shelf 3",
+            "real_observation": "You pick up the soapbar 3 from the shelf 3.",
+            "done": false,
+            "reward": 0.0
+          },
+          {
+            "state": "You pick up the soapbar 3 from the shelf 3.\nAVAILABLE ACTIONS: examine shelf 3,examine soapbar 3,go to bathtubbasin 1,go to garbagecan 1,go to handtowelholder 1,go to shelf 1,go to shelf 2,go to sinkbasin 1,go to toilet 1,go to toiletpaperhanger 1,go to towelholder 1,help,inventory,look,move soapbar 3 to shelf 3",
+            "candidates": [
+              "examine soapbar 3"
+            ],
+            "predictions": [],
+            "decision": "Action: examine soapbar 3",
+            "action": "examine soapbar 3",
+            "real_observation": "There's nothing special about soapbar 3.",
+            "done": false,
+            "reward": 0.0
+          },
+          {
+            "state": "There's nothing special about soapbar 3.\nAVAILABLE ACTIONS: examine shelf 3,examine soapbar 3,go to bathtubbasin 1,go to garbagecan 1,go to handtowelholder 1,go to shelf 1,go to shelf 2,go to sinkbasin 1,go to toilet 1,go to toiletpaperhanger 1,go to towelholder 1,help,inventory,look,move soapbar 3 to shelf 3",
+            "candidates": [
+              "go to sinkbasin 1"
+            ],
+            "predictions": [],
+            "decision": "Action: go to sinkbasin 1",
+            "action": "go to sinkbasin 1",
+            "real_observation": "You arrive at sinkbasin 1. On the sinkbasin 1, you see nothing.",
+            "done": false,
+            "reward": 0.0
+          },
+          {
+            "state": "You arrive at sinkbasin 1. On the sinkbasin 1, you see nothing.\nAVAILABLE ACTIONS: clean soapbar 3 with sinkbasin 1,examine sinkbasin 1,examine soapbar 3,go to bathtubbasin 1,go to garbagecan 1,go to handtowelholder 1,go to shelf 1,go to shelf 2,go to shelf 3,go to toilet 1,go to toiletpaperhanger 1,go to towelholder 1,help,inventory,look,move soapbar 3 to sinkbasin 1",
+            "candidates": [
+              "clean soapbar 3 with sinkbasin 1"
+            ],
+            "predictions": [],
+            "decision": "Action: clean soapbar 3 with sinkbasin 1",
+            "action": "clean soapbar 3 with sinkbasin 1",
+            "real_observation": "You clean the soapbar 3 using the sinkbasin 1.",
+            "done": false,
+            "reward": 0.0
+          },
+          {
+            "state": "You clean the soapbar 3 using the sinkbasin 1.\nAVAILABLE ACTIONS: clean soapbar 3 with sinkbasin 1,examine sinkbasin 1,examine soapbar 3,go to bathtubbasin 1,go to garbagecan 1,go to handtowelholder 1,go to shelf 1,go to shelf 2,go to shelf 3,go to toilet 1,go to toiletpaperhanger 1,go to towelholder 1,help,inventory,look,move soapbar 3 to sinkbasin 1",
+            "candidates": [
+              "go to garbagecan 1"
+            ],
+            "predictions": [],
+            "decision": "Action: go to garbagecan 1",
+            "action": "go to garbagecan 1",
+            "real_observation": "You arrive at garbagecan 1. On the garbagecan 1, you see nothing.",
+            "done": false,
+            "reward": 0.0
+          },
+          {
+            "state": "You arrive at garbagecan 1. On the garbagecan 1, you see nothing.\nAVAILABLE ACTIONS: examine garbagecan 1,examine soapbar 3,go to bathtubbasin 1,go to handtowelholder 1,go to shelf 1,go to shelf 2,go to shelf 3,go to sinkbasin 1,go to toilet 1,go to toiletpaperhanger 1,go to towelholder 1,help,inventory,look,move soapbar 3 to garbagecan 1",
+            "candidates": [
+              "move soapbar 3 to garbagecan 1"
+            ],
+            "predictions": [],
+            "decision": "Action: move soapbar 3 to garbagecan 1",
+            "action": "move soapbar 3 to garbagecan 1",
+            "real_observation": "You move the soapbar 3 to the garbagecan 1.",
+            "done": true,
+            "reward": 1.0
+          }
+        ],
+        "usage": {
+          "calls": 9,
+          "prompt_tokens": 5833,
+          "completion_tokens": 315
+        }
+      },
+      "wm_assisted": {
+        "success": 1,
+        "steps": [
+          {
+            "state": "You are in the middle of a room. Looking quickly around you, you see a bathtubbasin 1, a garbagecan 1, a handtowelholder 1, a shelf 3, a shelf 2, a shelf 1, a sinkbasin 1, a toilet 1, a toiletpaperhanger 1, and a towelholder 1.\nYour task is to: put a clean soapbar in garbagecan.\nAVAILABLE ACTIONS: go to bathtubbasin 1,go to garbagecan 1,go to handtowelholder 1,go to shelf 1,go to shelf 2,go to shelf 3,go to sinkbasin 1,go to toilet 1,go to toiletpaperhanger 1,go to towelholder 1,help,inventory,look",
+            "candidates": [
+              "go to shelf 1",
+              "go to shelf 2"
+            ],
+            "predictions": [
+              "You arrive at shelf 1. On the shelf 1, you see a candle 1, a cloth 1, a soapbottle 1, and a toiletpaper 1.",
+              "You arrive at shelf 2. On the shelf 2, you see a tissuebox 1."
+            ],
+            "decision": "Choice: 1",
+            "action": "go to shelf 1",
+            "real_observation": "You arrive at shelf 1. On the shelf 1, you see a candle 1, a cloth 1, a soapbottle 1, and a toiletpaper 1.",
+            "done": false,
+            "reward": 0.0
+          },
+          {
+            "state": "You arrive at shelf 1. On the shelf 1, you see a candle 1, a cloth 1, a soapbottle 1, and a toiletpaper 1.\nAVAILABLE ACTIONS: examine shelf 1,go to bathtubbasin 1,go to garbagecan 1,go to handtowelholder 1,go to shelf 2,go to shelf 3,go to sinkbasin 1,go to toilet 1,go to toiletpaperhanger 1,go to towelholder 1,help,inventory,look,take candle 1 from shelf 1,take cloth 1 from shelf 1,take soapbottle 1 from shelf 1,take toiletpaper 1 from shelf 1",
+            "candidates": [
+              "go to shelf 2",
+              "go to shelf 3"
+            ],
+            "predictions": [
+              "You arrive at shelf 2. On the shelf 2, you see a tissuebox 1.",
+              "You arrive at shelf 3. On the shelf 3, you see a candle 2, a soapbar 3, a soapbottle 3, and a toiletpaper 2."
+            ],
+            "decision": "Choice: 2",
+            "action": "go to shelf 3",
+            "real_observation": "You arrive at shelf 3. On the shelf 3, you see a candle 2, a soapbar 3, a soapbottle 3, and a toiletpaper 2.",
+            "done": false,
+            "reward": 0.0
+          },
+          {
+            "state": "You arrive at shelf 3. On the shelf 3, you see a candle 2, a soapbar 3, a soapbottle 3, and a toiletpaper 2.\nAVAILABLE ACTIONS: examine shelf 3,go to bathtubbasin 1,go to garbagecan 1,go to handtowelholder 1,go to shelf 1,go to shelf 2,go to sinkbasin 1,go to toilet 1,go to toiletpaperhanger 1,go to towelholder 1,help,inventory,look,take candle 2 from shelf 3,take soapbar 3 from shelf 3,take soapbottle 3 from shelf 3,take toiletpaper 2 from shelf 3",
+            "candidates": [
+              "take soapbar 3 from shelf 3",
+              "go to sinkbasin 1"
+            ],
+            "predictions": [
+              "You pick up the soapbar 3 from the shelf 3.",
+              "You arrive at sinkbasin 1. There is nothing on the sinkbasin 1."
+            ],
+            "decision": "Choice: 1",
+            "action": "take soapbar 3 from shelf 3",
+            "real_observation": "You pick up the soapbar 3 from the shelf 3.",
+            "done": false,
+            "reward": 0.0
+          },
+          {
+            "state": "You pick up the soapbar 3 from the shelf 3.\nAVAILABLE ACTIONS: examine shelf 3,examine soapbar 3,go to bathtubbasin 1,go to garbagecan 1,go to handtowelholder 1,go to shelf 1,go to shelf 2,go to sinkbasin 1,go to toilet 1,go to toiletpaperhanger 1,go to towelholder 1,help,inventory,look,move soapbar 3 to shelf 3",
+            "candidates": [
+              "examine soapbar 3",
+              "go to sinkbasin 1"
+            ],
+            "predictions": [
+              "It is a soapbar.",
+              "You arrive at sinkbasin 1. On the sinkbasin 1, you see nothing."
+            ],
+            "decision": "Choice: 2",
+            "action": "go to sinkbasin 1",
+            "real_observation": "You arrive at sinkbasin 1. On the sinkbasin 1, you see nothing.",
+            "done": false,
+            "reward": 0.0
+          },
+          {
+            "state": "You arrive at sinkbasin 1. On the sinkbasin 1, you see nothing.\nAVAILABLE ACTIONS: clean soapbar 3 with sinkbasin 1,examine sinkbasin 1,examine soapbar 3,go to bathtubbasin 1,go to garbagecan 1,go to handtowelholder 1,go to shelf 1,go to shelf 2,go to shelf 3,go to toilet 1,go to toiletpaperhanger 1,go to towelholder 1,help,inventory,look,move soapbar 3 to sinkbasin 1",
+            "candidates": [
+              "clean soapbar 3 with sinkbasin 1"
+            ],
+            "predictions": [
+              "You need to pick up the soapbar 3 first."
+            ],
+            "decision": "Choice: 1",
+            "action": "clean soapbar 3 with sinkbasin 1",
+            "real_observation": "You clean the soapbar 3 using the sinkbasin 1.",
+            "done": false,
+            "reward": 0.0
+          },
+          {
+            "state": "You clean the soapbar 3 using the sinkbasin 1.\nAVAILABLE ACTIONS: clean soapbar 3 with sinkbasin 1,examine sinkbasin 1,examine soapbar 3,go to bathtubbasin 1,go to garbagecan 1,go to handtowelholder 1,go to shelf 1,go to shelf 2,go to shelf 3,go to toilet 1,go to toiletpaperhanger 1,go to towelholder 1,help,inventory,look,move soapbar 3 to sinkbasin 1",
+            "candidates": [
+              "go to garbagecan 1",
+              "move soapbar 3 to sinkbasin 1"
+            ],
+            "predictions": [
+              "You arrive at garbagecan 1. It is empty.",
+              "You move the soapbar 3 to the sinkbasin 1."
+            ],
+            "decision": "Choice: 1",
+            "action": "go to garbagecan 1",
+            "real_observation": "You arrive at garbagecan 1. On the garbagecan 1, you see nothing.",
+            "done": false,
+            "reward": 0.0
+          },
+          {
+            "state": "You arrive at garbagecan 1. On the garbagecan 1, you see nothing.\nAVAILABLE ACTIONS: examine garbagecan 1,examine soapbar 3,go to bathtubbasin 1,go to handtowelholder 1,go to shelf 1,go to shelf 2,go to shelf 3,go to sinkbasin 1,go to toilet 1,go to toiletpaperhanger 1,go to towelholder 1,help,inventory,look,move soapbar 3 to garbagecan 1",
+            "candidates": [
+              "move soapbar 3 to garbagecan 1",
+              "examine soapbar 3"
+            ],
+            "predictions": [
+              "You move the soapbar 3 to the garbagecan 1.",
+              "The soapbar 3 is on the shelf 3."
+            ],
+            "decision": "Choice: 1",
+            "action": "move soapbar 3 to garbagecan 1",
+            "real_observation": "You move the soapbar 3 to the garbagecan 1.",
+            "done": true,
+            "reward": 1.0
+          }
+        ],
+        "usage": {
+          "calls": 27,
+          "prompt_tokens": 42381,
+          "completion_tokens": 1088
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "model": "gpt-6-luna",
+  "base_url": "https://spacetimeai.cc/v1",
+  "demonstrations_file": "/home/czx/LWM/world_model_research/experiments/alfworld/outputs/api_wm_assisted/alfworld_transition_demos.json",
+  "metrics": {
+    "completed_pairs": 0,
+    "requested_tasks": 1,
+    "task_id": 2421,
+    "baseline_successes": 0,
+    "wm_assisted_successes": 0,
+    "baseline_attempted": 0,
+    "wm_assisted_attempted": 1,
+    "baseline_errors": 0,
+    "wm_assisted_errors": 1,
+    "baseline_success_rate": 0,
+    "wm_assisted_success_rate": 0.0,
+    "paired_valid_runs": 0,
+    "paired_both_successes": 0,
+    "baseline_mean_steps": 0,
+    "wm_assisted_mean_steps": 0,
+    "wm_fewer_steps_count": 0,
+    "wm_more_steps_count": 0,
+    "wm_step_savings_total": 0,
+    "wm_step_savings_mean": 0,
+    "paired_win_count": 0,
+    "max_steps": 30,
+    "candidate_count": 3,
+    "trace_file": "/home/czx/LWM/world_model_research/experiments/alfworld/outputs/api_wm_assisted/alfworld_task_2421_goalfilter_v3.json.trace.jsonl.gz",
+    "usage": {
+      "baseline": {
+        "calls": 0,
+        "prompt_tokens": 0,
+        "completion_tokens": 0
+      },
+      "wm_assisted": {
+        "calls": 0,
+        "prompt_tokens": 0,
+        "completion_tokens": 0
+      }
+    }
+  },
+  "run_error": null,
+  "results": [
+    {
+      "item_id": 2421,
+      "task_type": "pick_two_obj_and_place-TissueBox-None-CoffeeTable-220",
+      "wm_assisted": {
+        "success": 0,
+        "steps": [],
+        "usage": {
+          "calls": 0,
+          "prompt_tokens": 0,
+          "completion_tokens": 0
+        },
+        "error": "APITimeoutError: Request timed out."
+      }
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "model": "gpt-6-luna",
+  "base_url": "https://spacetimeai.cc/v1",
+  "demonstrations_file": "/home/czx/LWM/world_model_research/experiments/alfworld/outputs/api_fewshot_pilot/alfworld_gpt-6-luna_20.json",
+  "metrics": {
+    "completed_pairs": 0,
+    "requested_tasks": 1,
+    "task_id": 2427,
+    "baseline_successes": 0,
+    "wm_assisted_successes": 0,
+    "baseline_success_rate": 0,
+    "wm_assisted_success_rate": 0,
+    "paired_win_count": 0,
+    "max_steps": 30,
+    "candidate_count": 3,
+    "trace_file": "/home/czx/LWM/world_model_research/experiments/alfworld/outputs/api_wm_assisted/traces/alfworld_task_2427_goalledger_v1.jsonl.gz",
+    "usage": {
+      "baseline": {
+        "calls": 0,
+        "prompt_tokens": 0,
+        "completion_tokens": 0
+      },
+      "wm_assisted": {
+        "calls": 0,
+        "prompt_tokens": 0,
+        "completion_tokens": 0
+      }
+    }
+  },
+  "run_error": "APITimeoutError: Request timed out.",
+  "results": [
+    {
+      "item_id": 2427,
+      "task_type": "look_at_obj_in_light-Book-None-DeskLamp-302"
+    }
+  ]
+}

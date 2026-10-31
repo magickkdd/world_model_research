@@ -1,0 +1,12 @@
+diff --git a/AgentGym/agentenv-alfworld/agentenv_alfworld/env_wrapper.py b/AgentGym/agentenv-alfworld/agentenv_alfworld/env_wrapper.py
+--- a/AgentGym/agentenv-alfworld/agentenv_alfworld/env_wrapper.py
++++ b/AgentGym/agentenv-alfworld/agentenv_alfworld/env_wrapper.py
+@@ -168,6 +168,8 @@ class ALFWorld_Wrapper:
+             return {"error": 'world_type must be one of "Text", "Embody" and "Hybrid"'}
+         try:
+             self._check_id(idx, True)
++            if idx in self.env_init:
++                self.env_init[idx].close()
+             self.env[idx].game_files = [self.games[game]]
+             self.env[idx].num_games = 1
+             self.env_init[idx] = self.env[idx].init_env(batch_size=1)
